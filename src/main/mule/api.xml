@@ -127,15 +127,14 @@ output application/json
     </flow>
     <flow name="get:\result:craft-student-grading-sapi-config">
         <set-variable value='#[attributes.queryParams.name default "ENTER YOUR NAME !"]' doc:name="Student_Name" doc:id="c4c1945c-af9b-42f7-9852-f2cbfa08f304" variableName="name"/>
-		<ee:transform doc:name="Transform Message_StudentName_andmark">
+		<ee:transform doc:name="Random">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	
   StudentName: vars.name,
-  Mark: random() * 100
+  Mark: random() * 200
 }]]></ee:set-payload>
             </ee:message>
         </ee:transform>
