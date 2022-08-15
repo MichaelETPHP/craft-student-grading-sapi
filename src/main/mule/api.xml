@@ -133,6 +133,7 @@ output application/json
 output application/json
 ---
 {
+	
   StudentName: vars.name,
   Mark: random() * 100
 }]]></ee:set-payload>
