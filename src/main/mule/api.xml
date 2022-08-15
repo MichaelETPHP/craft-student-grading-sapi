@@ -126,7 +126,7 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\result:craft-student-grading-sapi-config">
-        <set-variable value='#[attributes.queryParams.name default "ENTER YOUR NAME !"]' doc:name="StudentName_User" doc:id="c4c1945c-af9b-42f7-9852-f2cbfa08f304" variableName="name"/>
+        <set-variable value='#[attributes.queryParams.name default "ENTER YOUR NAME !"]' doc:name="Student_Name" doc:id="c4c1945c-af9b-42f7-9852-f2cbfa08f304" variableName="name"/>
 		<ee:transform>
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
