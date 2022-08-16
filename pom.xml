@@ -50,7 +50,14 @@
 			<version>1.2.2</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-
+		<!-- REMOVE -->
+		<dependency>
+			<groupId>31b429fc-7fde-4b6e-9c6b-1aa3c841df36</groupId>
+			<artifactId>craft-student-grading-sapi</artifactId>
+			<version>1.0.0</version>
+			<classifier>raml</classifier>
+			<type>zip</type>
+		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-apikit-module</artifactId>
